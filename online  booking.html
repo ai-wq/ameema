@@ -1,0 +1,271 @@
+ <!doctype html>
+<html>
+		<head>
+  		  <title>Home</title>
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
+		  <script src="js/bootstrap.min.js"></script>
+		  <script src="js/jquery-3.3.1.min.js"></script>
+		  <link rel="stylesheet" href="Stylesheet.css">
+  		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+	</head>
+	<style>
+	body{
+		background-image:url(Home%20page%20pics/background1.jpeg);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+}
+
+
+</style>	
+<body>
+<!--====================================================Navbar=======================================================-->
+<div class="col-md-12">
+	<nav class="navbar navbar-fixed-top" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"style="background-color:#000; color:#000;"></span>
+        <span class="icon-bar"style="background-color:#000; color:#000;"></span>
+        <span class="icon-bar"style="background-color:#000; color:#000;"></span>                        
+	  </button>
+      	<div><a class="navbar-brand" href="Home.html"><img src="logo/icon.png" id="logo"alt="logo"/></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Home.html"id="tab">Home</a></li>
+					<li><a href="Gallery page 1.html"id="tab">Gallery</a></li>
+					<li><a href="online  booking.html"id="tab"style="border-bottom:2px solid dodgerblue;">Online booking</a></li>
+					<li><a href="Events.html" id="tab">Events</a></li>
+					<li><a href="contact us.html" id="tab">Contact Us</a></li>
+					<li><a href="About us.html" id="tab">About us</a></li>
+				</ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<!--=========================================Slider============================================================-->
+<br><br><br>
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="site/22.jpg"  style="width:100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+
+      <div class="item ">
+        <img src="site/24.jpg"  style="width:100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+
+  
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--====================================================Form=======================================================-->
+
+<br><br><br><br><br><br>
+<div class="container" style=" background-color:#f1f1f1;padding:20px 20px;">
+<h2 style="text-align:center;font-size:1.8cm;" >We are offering a flat discount of 50% off ,spcially for kids</h2>
+</div>
+	<div id="form">	<div ng-app="">
+		<div class="col-md-12">
+		   <div class="col-md-12 form-group">
+			<div class="col-md-6 form-group">
+			   <h2  class="contact-us" style="font-size:72px; color:#FFF;"><strong style="font-size:5cm; color:#555;">T</strong>icket <strong style="font-size:5cm; color:#555;">F</strong>orm.</h2>
+			</div>
+			<div class="col-md-6 form-group">
+			</div>
+			</div><hr><br><br><br>
+		  </div>		
+			<div class="col-md-1"></div>
+				<div class="col-md-6" id ="mainform"><h4 style="text-align:center; font-family:calibri; font-size:44px;">Equarium&reg;</h4><hr>
+				<div class="col-md-6 form-group">
+				<form>
+				<label><h4>Day of Visit:</h4> </label><input type="date" ng-model="date" size="20"  class=" form-control" placeholder="User name" style="width:300px;" required />
+				<label><h4>Name:</h4> </label><input type="text"  ng-model="name" size="20"  class=" form-control" placeholder="Your name" style="width:300px;"required />
+				<label><h4>How many are Under 8 year:</h4></label> <input type="number" ng-model="child" size="20" id="pic2"  class=" form-control" placeholder="Half ticket for under 8year old children." style="width:300px;" required/>
+					</div>
+			<div class="col-md-6 form-group">
+				<label><h4>No. of Tickets You Want:</h4> </label><input type="number" ng-model="total_tickets" size="20" id="pic1" class=" form-control" placeholder="How many tickets you want?" style="width:300px;"required />	
+				<label><h4>Phone number:</h4> </label><input type="number" name="name" size="20"  class=" form-control" placeholder="+92**********" style="width:300px;" required /><br>
+			</div>
+							<input type="submit" class="btn btn-info" id="btn" onClick="addition()" style="text-shadow:0 0 3px #000000; font-size:24px;"></button
+
+
+
+<br><br><br><br>
+
+			</form>
+			
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3" style=" height:500px;">
+						<div class="box2" >
+			<div class="box-img">
+				<img src="logo/ticket.png"  style="width:100%;" alt=""/> 
+			</div>
+			<div class="box-img2" >
+				<p style="position:absolute; margin-top:110px;margin-left:25px;font-size:16px;">Date:<b ng-bind="date" style="font-size:12px;"></b></p>
+				<p style="position:absolute; margin-top:140px;margin-left:25px;font-size:16px;">Name:<strong style="margin-left:10px;" id="name" ng-bind="name"></strong></p>
+				<p style="position:absolute; margin-top:170px;margin-left:25px;font-size:16px;">Persons under 8year&nbsp:<b ng-bind="child"></b></p>
+				<p style="position:absolute; margin-top:200px;margin-left:25px;font-size:16px;">Total Tickets:<b ng-bind="total_tickets"></b></p>
+				<p style="position:absolute; margin-top:230px;margin-left:25px;font-size:16px;">Total Amount:PKR<input id="pesse" style="text-align:center;"></p>
+
+				<img src="logo/ticket2.png"  style="width:100%; "  alt=""/> 
+			</div>
+
+		</div>  
+</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+	</div>
+	</div>
+<script>
+function addition(){
+	var Quantity1 = parseInt(document.getElementById("pic1").value);
+	var Quantity2 = parseInt(document.getElementById("pic2").value);
+	var Price = 50;
+	var result  =Quantity1*Price-Quantity2 / 2 * Price ;
+   document.getElementById("pesse").value=  result;
+}
+</script>
+	<div style="text-align:center;">
+	<p style="font-size:72px; color:#FFF;"><strong style="font-size:5cm; color:#555;">S</strong>ea <strong style="font-size:5cm;color:#555;">I</strong>T    <strong style="font-size:5cm;color:#555;">F</strong>or<strong style="font-size:5cm; color:#555;">Y</strong>ourself</p>
+	</div>
+
+<br>
+<h1  style="background-color:#f1f1f1;padding:50px 0px 50px 30px; text-align:center; opacity:.8;">
+Don’t miss your chance to visit one of the world’s largest aquariums. With everything from belugas and whale sharks to puffins and penguins, there’s no better way to witness marine life on land.</h1><br><br><br>
+<h1 style="font-size:72px; color:#FFF; text-align:center;">
+<strong style="font-size:5cm; color:#555;">C</strong>o-operating <strong style="font-size:5cm; color:#555;">W</strong>ith.</h1><br><br><br>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="min-height:100px;width:100%;">
+<div class="col-md-12" style="min-height:100px; margin-top:60px; background-color:#;">
+    <div class="carousel-inner" style="min-height:100px;">
+
+      <div class="item active">
+      <div class="col-xs-4">        
+      <img src="logo/s1.jpg"   style="min-height:100px;width:100%;">
+        <div class="carousel-caption">
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s2.png"  style="width:100%;min-height:100px;">
+        <div class="carousel-caption">
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s3.png"  style="width:100%;min-height:100px;">
+        <div class="carousel-caption">
+        </div></div>
+      </div>
+
+      <div class="item ">
+      <div class="col-xs-4">        
+      <img src="logo/s4.jpg"  style="min-height:100px;width:100%;">
+        <div class="carousel-caption">
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s5.jpg"  style="width:100%;min-height:100px;">
+        <div class="carousel-caption">
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s6.jpg"  style="width:100%;min-height:100px;">
+        <div class="carousel-caption">
+        </div></div>
+      </div>
+
+      <div class="item ">
+      <div class="col-xs-4">        
+      <img src="logo/s7.png"   style="min-height:100px;width:100%;">
+        <div class="carousel-caption">
+          <p>LA is always so much fun!</p>
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s8.jpg"  style="width:100%;min-height:100px">
+        <div class="carousel-caption">
+        </div></div>
+      <div class="col-xs-4">
+        <img src="logo/s9.jpg"  style="width:100%;min-height:100px;">
+        <div class="carousel-caption">
+        </div></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+<!--===============================================Footer======================================================-->
+	<div class="footer">
+		<div class="col-md-12" style=" background-color:#659EF3;" >
+			<div class="col-md-4"style="text-align:center;">
+				<p><a href="#" id ="links"><h3>Contact Us</h3></a></p><hr>
+				<p><a href="#" id ="links"><p><span class="glyphicon glyphicon-home"></span> Karachi Pakistan.</p></a></p> 	 	
+				<p><a href="#" id ="links"><p><span class="glyphicon glyphicon-envelope"></span>&nbsp;abc@gmail.com</p></a></p>
+				<p> <a href="#" id ="links"><p><span class="glyphicon glyphicon-phone"></span>+923128774604</p></a></p>
+				<p> <a href="#" id ="links"><p><span class="glyphicon glyphicon-globe"></span>&nbsp;www.lifeinwater.com</p></a></p>
+			</div>
+			<div class="col-md-4"style="text-align:center;">
+				<p><a href="#"id="links"><h3 >About</h3></a></p><hr>
+				<p><a href="#" id ="links"><p>About us</p></a></p>
+				<p><a href="#" id ="links"><p>Privacy</p></a></p>
+				<p><a href="#" id ="links"><p>Conditions</p></a></p>
+				<p><a href="#" id ="links"><p>Policy</p></a></p>
+			</div>
+			<div class="col-md-4"style="text-align:center;">
+				<p><a href="#" id ="links"><h3>Stay in Touch</h3></a></p><hr>
+				<center>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-pinterest"></a></center>
+ 				<input type="email" class="form-control" placeholder="Subscribe for Updates">
+				<button class="btn btn-success">Subscribe</button>
+			</div>
+		</div>
+	</div>	
+			<div class="col-sm-12" style=" background-color:#1A78C2; height:40px;">
+			<h4 style="text-align:center; color:#FFF; text-shadow:0 0 8px #000;">&copy; 2021 Copyrights: Aptech</h4>
+			</div>
+
+
+
+
+
+
+</body>
+</html>
